@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wilson 69 Fitness</title>
+  <title>Wilson 57 Fitness</title>
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -14,22 +14,22 @@
       theme: {
         extend: {
           colors: {
-            primary: "#FF5722",
+            primary: "#DC2626",
           },
         },
       },
     };
   </script>
 </head>
-<body class="bg-zinc-950 text-white font-sans min-h-screen flex flex-col">
+<body class="bg-gray-200 text-gray-900 font-sans min-h-screen flex flex-col">
 
 <!-- Header -->
-<header class="bg-zinc-900 p-4 text-center shadow">
-  <h1 class="text-xl font-bold text-primary">Wilson 69 Fitness</h1>
+<header class="bg-gray-300 p-4 text-center shadow">
+  <h1 class="text-xl font-bold text-primary">Wilson 57 Fitness</h1>
 </header>
 
 <!-- Navigation -->
-<nav class="fixed bottom-0 left-0 right-0 bg-zinc-900 flex justify-around py-2 border-t border-zinc-800">
+<nav class="fixed bottom-0 left-0 right-0 bg-gray-300 flex justify-around py-2 border-t border-gray-400">
   <button id="tabTrain" onclick="showTrain()" class="tab-btn text-primary">🏋️ Entrenamiento</button>
   <button id="tabFood" onclick="showFood()" class="tab-btn">🍽️ Recetas</button>
 </nav>
@@ -124,8 +124,8 @@ function renderTraining(){
       <h2 class="text-lg font-bold text-primary mb-2">${group}</h2>
 
       <div class="overflow-x-auto">
-        <table class="w-full text-sm border border-zinc-800 rounded-lg overflow-hidden">
-          <thead class="bg-zinc-900">
+        <table class="w-full text-sm border border-gray-400 rounded-lg overflow-hidden">
+          <thead class="bg-gray-300">
             <tr>
               <th class="p-2">Ejercicio</th>
               <th>Series</th>
@@ -145,7 +145,7 @@ function renderTraining(){
     workouts[group].forEach(ex=>{
 
       const tr = document.createElement("tr");
-      tr.className="border-t border-zinc-800 hover:bg-zinc-800 cursor-pointer transition";
+      tr.className="border-t border-gray-400 hover:bg-gray-400 cursor-pointer transition";
 
       tr.innerHTML = `
         <td class="p-2 font-medium">${ex.name}</td>
@@ -190,7 +190,7 @@ function renderFood(){
 
     const card = document.createElement("div");
 
-    card.className="bg-zinc-900 rounded-xl p-4 shadow";
+    card.className="bg-gray-300 rounded-xl p-4 shadow";
 
     card.innerHTML = `
       <h3 class="font-semibold text-lg mb-2">${rec.name}</h3>
